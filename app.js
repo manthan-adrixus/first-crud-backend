@@ -6,6 +6,7 @@ const io = require("socket.io")(http, {
     origins: ["http://localhost:4200"],
   },
 });
+
 const mongoose = require("mongoose");
 var con = mongoose.connect("mongodb://localhost:27017/testDatabase", (err) => {
   if (!err) {
